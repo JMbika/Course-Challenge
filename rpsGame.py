@@ -24,21 +24,30 @@ if userChoice[0].lower() == computerChoice:
             
 elif userChoice[0].lower() == "r" and  computerChoice == "s":
     print("Computer Loses")
+    userScore += 1
 
 elif userChoice[0].lower() == "s" and  computerChoice == "r":
     print("User Loses")
+    computerScore += 1
 
 elif userChoice[0].lower() == "p" and  computerChoice == "s":
     print("User Loses")
+    computerScore += 1
 
 elif userChoice[0].lower() == "s" and  computerChoice == "p":
     print("Computer Loses")
+    userScore += 1
 
 elif userChoice[0].lower() == "r" and  computerChoice == "p":
     print("User Loses")
+    computerScore += 1
             
 elif userChoice[0].lower() == "p" and  computerChoice == "r":
     print("Computer Loses")
+    userScore += 1
 
 else:
     print("Invalid Answer. Try again!")
+
+print("User Wins: ", userScore)
+print("Computer wins: ", computerScore)
