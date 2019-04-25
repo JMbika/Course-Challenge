@@ -90,7 +90,7 @@ rps_game()
 answer = True
 while answer:
     answer = input("Play again (y)es, (n)o?")
-    if answer == "y":
+    if answer[0].lower() == "y":
         rps_game()
     else:
         break
